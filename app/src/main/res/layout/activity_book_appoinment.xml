@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/bg_admin"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:fontFamily="@font/bold"
+        android:layout_height="102dp"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="Appointment"
+        android:textColor="@color/white"
+        android:textSize="45sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bold"
+        android:layout_below="@+id/top_view"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="60dp"
+        android:text="Book your appointment anytime you want."
+        android:textColor="@color/blue"
+        android:textSize="20sp"
+        android:id="@+id/desc"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/desc"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="266dp">
+
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top_view"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/light"
+            android:hint="Enter Patient Name"
+            android:textColorHint="@color/blue"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/light"
+            android:hint="Select your date"
+            android:textColorHint="@color/blue"
+            android:textSize="20dp" />
+
+
+        <EditText
+            android:id="@+id/edit1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/date"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/light"
+            android:hint="Enter your message"
+            android:textColorHint="@color/blue"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/simple_list_item_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/light"
+            android:entries="@array/doctors" />
+
+
+        <!--   android:entries="@array/doctors"     <TextView-->
+        <!--            android:id="@+id/totalAmountTextView"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_below="@id/edit1"-->
+        <!--            android:layout_marginLeft="10dp"-->
+        <!--            android:layout_marginTop="20dp"-->
+        <!--            android:fontFamily="@font/light"-->
+        <!--            android:textColor="@color/blue"-->
+        <!--            android:textSize="20sp"-->
+        <!--            android:text="Total Amount: \u20B9 0.00" />-->
+
+        <Spinner
+            android:id="@+id/time_slot_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/simple_list_item_1"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:entries="@array/time_slots"
+            android:fontFamily="@font/light" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/select"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="45dp"
+            android:layout_marginRight="20sp"
+            android:backgroundTint="#193B59"
+            android:fontFamily="@font/bold"
+            android:text="Book Appointment"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

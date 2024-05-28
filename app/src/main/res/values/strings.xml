@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Patient_app</string>
+
+    <string-array name="roles_array">
+        <item>Choose your role</item>
+        <item>Admin</item>
+        <item>Users</item>
+        <item>Doctor</item>
+        <!-- Add more roles as needed -->
+    </string-array>
+
+
+</resources>
