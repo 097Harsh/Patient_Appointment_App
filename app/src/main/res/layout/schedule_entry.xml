@@ -5,7 +5,8 @@
     android:layout_height="wrap_content"
     app:cardCornerRadius="12dp"
     app:cardElevation="12dp"
-    android:layout_margin="16dp">
+    android:layout_margin="16dp"
+    android:fitsSystemWindows="true">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -82,13 +83,7 @@
             </TextView>
         </LinearLayout> -->
         <!-- Appointment Date -->
-        <Button
-            android:id="@+id/add_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:text="Add" />
+
 
 
     </LinearLayout>

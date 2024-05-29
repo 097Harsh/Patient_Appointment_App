@@ -5,7 +5,8 @@
     android:layout_height="wrap_content"
     app:cardCornerRadius="12dp"
     app:cardElevation="12dp"
-    android:layout_margin="16dp">
+    android:layout_margin="16dp"
+    android:fitsSystemWindows="true">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -155,24 +156,25 @@
             android:layout_marginTop="16dp">
 
             <!-- Accept Button -->
+
+            <!-- Reject Button -->
             <Button
                 android:id="@+id/acceptButton"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
                 android:layout_weight="1"
-                android:backgroundTint="@color/green"
+                android:backgroundTint="#0076BA"
                 android:text="Accept"
                 android:textColor="@android:color/white" />
 
-            <!-- Reject Button -->
             <Button
                 android:id="@+id/rejectButton"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_weight="1"
-                android:backgroundTint="@color/red"
+                android:backgroundTint="@color/blue"
                 android:text="Reject"
                 android:textColor="@android:color/white" />
         </LinearLayout>

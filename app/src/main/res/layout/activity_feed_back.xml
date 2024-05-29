@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/main"
+    android:fitsSystemWindows="true"
     >
 
     <View
@@ -30,7 +31,6 @@
         android:layout_below="@id/top_view"
         android:layout_marginTop="40dp"
         android:layout_marginHorizontal="10dp"
-        android:fontFamily="@font/bold"
         android:text="Give us your feedback"
         android:textColor="@color/blue"
         android:textSize="30sp" />
@@ -42,7 +42,6 @@
         android:layout_below="@id/textview2"
         android:layout_marginTop="11dp"
         android:layout_marginHorizontal="15dp"
-        android:fontFamily="@font/light"
         android:text="Your opinion is important to us.\nThis way we can keep improving."
         android:textColor="@color/blue"
         android:textSize="20sp" />
@@ -55,7 +54,6 @@
         android:layout_below="@id/textview3"
         android:layout_marginTop="14dp"
         android:layout_marginHorizontal="10dp"
-        android:fontFamily="@font/light"
         android:hint="Name"
         android:textColorHint="@color/blue"
         android:textSize="20sp" />
@@ -69,7 +67,6 @@
         android:layout_below="@id/edit1"
         android:layout_marginTop="20dp"
         android:layout_marginHorizontal="10dp"
-        android:fontFamily="@font/light"
         android:hint="Feedback"
         android:textColorHint="@color/blue"
         android:textSize="20sp" />
@@ -81,7 +78,6 @@
         android:layout_below="@id/edit2"
         android:layout_marginTop="31dp"
         android:layout_marginHorizontal="10dp"
-        android:fontFamily="@font/light"
         android:text="Rate us"
         android:textColor="@color/blue"
         android:textSize="20sp" />
@@ -108,7 +104,6 @@
         android:layout_marginTop="45dp"
         android:layout_marginHorizontal="20dp"
         android:backgroundTint="#193B59"
-        android:fontFamily="@font/bold"
         android:text="Send Feedback"
         android:textSize="20sp" />
 

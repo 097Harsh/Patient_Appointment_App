@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white"
-    tools:context=".register">
+    tools:context=".register"
+    android:fitsSystemWindows="true">
 
     <ImageView
         android:id="@+id/imageView2"
